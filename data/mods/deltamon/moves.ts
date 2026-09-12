@@ -662,6 +662,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		isZ: "verdantomegapetal",
 		onHit(target) {
 			this.heal(Math.ceil(target.baseMaxhp));
+			this.add('-curestatus', target, target.status, '[from] move: Omega Kindness');
 			target.clearStatus();
 			target.removeVolatile('confusion');
 			target.setBoost(this.effectState.boosts);

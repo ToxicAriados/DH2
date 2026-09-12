@@ -1251,6 +1251,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 			if (target.side.getSideCondition('egg')) {
 				this.heal(source.baseMaxhp * 0.33, source);
 				this.add('-message', `${source.name} consumed the Egg!`);
+				this.add('-sideend', target.side, 'move: Egg', '[from] move: Tail of Hell', '[of] ' + target);
 				target.side.removeSideCondition('egg');
 			}
 		},

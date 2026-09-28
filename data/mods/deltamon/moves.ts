@@ -773,6 +773,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	
 	mewmewwand: {
 		name: "Mew Mew Wand",
+		type: "Psychic",
 		category: "Special",
 		basePower: 95,
 		accuracy: 100,

@@ -626,6 +626,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 130, def: 90, spa: 80, spd: 90, spe: 110},
 		abilities: {0: "Savage Roar"},
 		weightkg: 122.5,
+		cosmeticFormes: ["Roaring Knight"],
 	},
 	friend: {
 		num: -59,
